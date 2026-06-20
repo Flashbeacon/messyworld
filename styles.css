@@ -123,6 +123,17 @@ main{
 	border-color: white;
 }
 
+#signup #push,
+#login #push {
+	background: black;
+	color: white;
+	border: 1px solid grey;
+	padding: 4px 12px;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+
 .head{
 	font-size: 14px;
 }
