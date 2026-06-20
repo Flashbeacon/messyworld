@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Page</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<header>
+		<heading>
+			<span id="title">Welcome to CodedGalaxy</span>
+		</heading>
+
+		<nav class="creepyEffect">
+			<li>Signup</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li><li>Login</li>
+		</nav>
+
+		<menu class="menu">
+			<li onclick="ExpandUp()" id="sign">Signup</li>
+			<li onclick="ExpandIn()" id="loginbtn">Login</li>
+		</menu>
+	</header>
+
+	<nav class="news">
+		<span>It's so nice today</span>
+	</nav>
+
+	<main>
+
+		<div id="signup">
+			<h4>What do you think? For what this signup is?</h4>
+
+			<label>Type Ur username here</label>
+			<br>
+
+			<input
+				placeholder="Don't hide ur name, There is always an exception"
+				type="text">
+
+			<br>
+
+			<label>No need for Password</label>
+		</div>
+
+		<div id="login">
+			<h4>Our world is little bit different, actually it isn't or it is..</h4>
+
+			<label>Type Ur username here</label>
+			<br>
+
+			<input
+				placeholder="You don't have to recall, all do"
+				type="text">
+
+			<br>
+		</div>
+
+		<div class="head">
+			<h3>It's so Dramatic to Handle things</h3>
+
+			<div class="head_card">
+				<p>
+					Everything in the world doesn't have to be learnt.
+					Still, Some try to.....You should know what u are doing.
+					cuz, in this world no one cares.
+				</p>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<span>
+			looks basic, but have many things in it.
+			Try to understand,....May be U will unlock many things from U
+		</span>
+	</footer>
+
+	<script>
+
+		function ExpandUp() {
+			const sign = document.getElementById('sign');
+			const form = document.getElementById('signup');
+
+			form.classList.toggle('visible');
+			console.log(form.className);
+			// if (form.classList.contains('visible')) {
+			// 	sign.textContent = "Signup";
+			// 	form.classList.remove('visible');
+			// } else {
+			// 	sign.textContent = "Hide";
+			// 	form.classList.add('visible');
+
+			// 	form.scrollIntoView({
+			// 		behavior: 'smooth',
+			// 		block: 'nearest'
+			// 	});
+			// }
+		}
+
+		function ExpandIn() {
+			const loginBtn = document.getElementById('loginbtn');
+			const form = document.getElementById('login');
+
+			if (form.classList.contains('visible')) {
+				loginBtn.textContent = "Login";
+				form.classList.remove('visible');
+			} else {
+				loginBtn.textContent = "Hide";
+				form.classList.add('visible');
+
+				form.scrollIntoView({
+					behavior: 'smooth',
+					block: 'nearest'
+				});
+			}
+		}
+
+	</script>
+
+</body>
+
+</html>
